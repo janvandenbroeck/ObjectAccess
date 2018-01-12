@@ -1,0 +1,18 @@
+<aura:component controller="ObjectAccessController">
+    <aura:attribute name='profileId' type='Id'/>
+
+  	<aura:handler name="ObjectAccessProfileEvent" event="c:ObjectAccessProfileEvent" action="{!c.handleObjectAccessProfileEvent}"/>
+
+    <div class="slds-text-heading_large slds-p-horizontal-medium slds-p-vertical-medium">
+        Custom Object Access Verifier
+    </div>
+    
+	<div class="slds-grid slds-wrap">
+  		<div class="slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2 slds-p-horizontal_small slds-p-vertical_small">
+            <c:ObjectAccessProfileList />
+        </div>
+  		<div class="slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2 slds-p-horizontal_small slds-p-vertical_small">
+            <c:ObjectAccessUserList profileId="{! v.profileId}"/> 
+        </div>
+	</div>
+</aura:component>

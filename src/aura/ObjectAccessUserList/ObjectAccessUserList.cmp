@@ -1,0 +1,31 @@
+<aura:component controller="ComplianceController">
+    <aura:attribute name='listUsers' type='List'/>
+    <aura:attribute name='profileId' type='Id'/>
+    
+    <aura:handler name="change" value="{!v.profileId}" action="{!c.processProfileId}"/>
+    
+    <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        <thead>
+            <tr class="slds-text-title_caps">
+                <th scope="col">
+                    <div class="slds-truncate" title="Username">Username</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Number of Custom Objects">Number of Custom Objects</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.listUsers}" var="user">
+                <tr>
+                    <th scope="row" data-label="Username">
+                        <div class="slds-truncate" title="{!user.username}">{!user.username}</div>
+                    </th>
+                    <td data-label="Number of Custom Objects">
+                        <div class="slds-truncate" title="{!user.value}">{!user.value}</div>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>    
+</aura:component>
