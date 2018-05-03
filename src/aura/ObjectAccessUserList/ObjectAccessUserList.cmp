@@ -1,9 +1,9 @@
-<aura:component controller="ComplianceController">
+<aura:component controller="ObjectAccessController">
     <aura:attribute name='listUsers' type='List'/>
     <aura:attribute name='profileId' type='Id'/>
-    
+
     <aura:handler name="change" value="{!v.profileId}" action="{!c.processProfileId}"/>
-    
+
     <table class="slds-table slds-table_bordered slds-table_cell-buffer">
         <thead>
             <tr class="slds-text-title_caps">
@@ -11,7 +11,7 @@
                     <div class="slds-truncate" title="Username">Username</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="Number of Custom Objects">Number of Custom Objects</div>
+                    <div class="slds-truncate" title="# Custom Objects"># Custom Objects</div>
                 </th>
             </tr>
         </thead>
@@ -27,5 +27,5 @@
                 </tr>
             </aura:iteration>
         </tbody>
-    </table>    
+    </table>
 </aura:component>
