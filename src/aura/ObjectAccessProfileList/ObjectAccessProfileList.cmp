@@ -12,10 +12,10 @@
                     <div class="slds-truncate" title="Profile">Profile</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="# Users"># of Users</div>
+                    <div class="slds-truncate" title="# Users"># Users</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="View Users">View Users</div>
+                    <div class="slds-truncate" title="Users">Users</div>
                 </th>
             </tr>
         </thead>
@@ -26,7 +26,7 @@
                         <div class="slds-truncate" title="{!profile.label}">{!profile.Name}</div>
                     </th>
                     <td data-label="# Users">
-                        <div class="slds-truncate" title="{!profile.u_count}">{!profile.usercount}</div>
+                        <div class="slds-truncate" title="{!profile.usercount}">{!profile.usercount}</div>
                     </td>
                     <td data-label="View">
                         <div class="slds-truncate">

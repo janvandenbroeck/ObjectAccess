@@ -4,7 +4,7 @@
   	<aura:handler name="ObjectAccessProfileEvent" event="c:ObjectAccessProfileEvent" action="{!c.handleObjectAccessProfileEvent}"/>
 
     <div class="slds-text-heading_large slds-p-horizontal-medium slds-p-vertical-medium">
-        Custom Object Access Verifier
+        Object Access Verifier
     </div>
 
 	<div class="slds-grid slds-wrap">
