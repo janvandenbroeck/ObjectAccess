@@ -7,11 +7,11 @@
         Custom Object Access Verifier
     </div>
 
-	<div class="slds-grid slds-wrap">
-  		<div class="slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3 slds-p-horizontal_small slds-p-vertical_small">
+	<div class="slds-grid slds-gutters">
+  		<div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
             <c:ObjectAccessProfileList />
         </div>
-  		<div class="slds-size_2-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-3 slds-p-horizontal_small slds-p-vertical_small">
+  		<div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
             <c:ObjectAccessUserList profileId="{! v.profileId}"/>
         </div>
 	</div>
