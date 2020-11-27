@@ -11,7 +11,34 @@
                     <div class="slds-truncate" title="Username">Username</div>
                 </th>
                 <th scope="col">
-                    <div class="slds-truncate" title="# Custom Objects"># Custom Objects</div>
+                    <div class="slds-truncate" title="# Objects"># Custom</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Account">Account</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Contact">Contact</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Lead">Lead</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Oppty">Oppty</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Case">Case</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Quote">Quote</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Order">Order</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Contract">Contract</div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate" title="Campaign">Campaign</div>
                 </th>
             </tr>
         </thead>
@@ -21,8 +48,35 @@
                     <th scope="row" data-label="Username">
                         <div class="slds-truncate" title="{!user.username}">{!user.username}</div>
                     </th>
-                    <td data-label="Number of Custom Objects">
-                        <div class="slds-truncate" title="{!user.value}">{!user.value}</div>
+                    <td data-label="# Custom Objects">
+                        <div class="slds-truncate" title="{!user.value.customobjects}">{!user.value.customobjects}</div>
+                    </td>
+                    <td data-label="Account">
+                        <div class="slds-truncate" title="Account">{!user.value.Account}</div>
+                    </td>
+                    <td data-label="Contact">
+                        <div class="slds-truncate" title="Contact">{!user.value.Contact}</div>
+                    </td>
+                    <td data-label="Lead">
+                        <div class="slds-truncate" title="Lead">{!user.value.Lead}</div>
+                    </td>
+                    <td data-label="Oppty">
+                        <div class="slds-truncate" title="Opportunity">{!user.value.Opportunity}</div>
+                    </td>
+                    <td data-label="Case">
+                        <div class="slds-truncate" title="Case">{!user.value.Case}</div>
+                    </td>
+                    <td data-label="Quote">
+                        <div class="slds-truncate" title="Quote">{!user.value.Quote}</div>
+                    </td>
+                    <td data-label="Order">
+                        <div class="slds-truncate" title="Order">{!user.value.Order}</div>
+                    </td>
+                    <td data-label="Contract">
+                        <div class="slds-truncate" title="Contract">{!user.value.Contract}</div>
+                    </td>
+                    <td data-label="Campaign">
+                        <div class="slds-truncate" title="Campaign">{!user.value.Campaign}</div>
                     </td>
                 </tr>
             </aura:iteration>

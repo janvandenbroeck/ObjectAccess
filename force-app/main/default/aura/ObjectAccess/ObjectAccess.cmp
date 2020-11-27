@@ -4,14 +4,14 @@
   	<aura:handler name="ObjectAccessProfileEvent" event="c:ObjectAccessProfileEvent" action="{!c.handleObjectAccessProfileEvent}"/>
 
     <div class="slds-text-heading_large slds-p-horizontal-medium slds-p-vertical-medium">
-        Custom Object Access Verifier
+        Object Access Verifier
     </div>
 
-	<div class="slds-grid slds-gutters">
-  		<div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+    <div class="slds-grid slds-wrap slds-gutters">
+        <div class="slds-col slds-size_1-of-3 slds-p-horizontal_small slds-p-vertical_small">
             <c:ObjectAccessProfileList />
         </div>
-  		<div class="slds-col slds-size_1-of-2 slds-p-horizontal_small">
+        <div class="slds-col slds-size_2-of-3 slds-p-horizontal_small slds-p-vertical_small">
             <c:ObjectAccessUserList profileId="{! v.profileId}"/>
         </div>
 	</div>
